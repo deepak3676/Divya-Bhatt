@@ -12,7 +12,8 @@ export enum AssetPaths {
     PROJECT_CUSTOM_DROPDOWN = "assets/projects-images/adventure.png",
     PROJECT_HMS_APP = "assets/projects-images/vedaro-with-text.png",
     PROJECT_KIWI_FINANCE = "assets/experience-images/flytsocial_logo.jpg",
-    PROJECT_LMS_APP = "assets/projects-images/beast-kitchen.png",
+    PROJECT_LMS_APP = "assets/projects-images/Beast.png",
+    PROJECT_DP_APP="assets/achievement-images/image.png",
     PROJECT_MUSIC_PLAYER = "assets/projects-images/music-player.png",
     PROJECT_RAS_FINANCE = "assets/projects-images/ras-finance.png",
     PROJECT_SA_TILING = "assets/projects-images/sa-tiling.png",
@@ -31,6 +32,6 @@ export enum AssetPaths {
     ACHIEVEMENT_COVER = "assets/illustrations/AchievementCover.svg",
     ACHIEVEMENT_AOC_PIC = "assets/achievement-images/advent-of-code-finished.png",
     ACHIEVEMENT_CPC_RSP_WIN_PIC = "assets/achievement-images/cpc-rsp-win.jpg",
-    ACHIEVEMENT_UNISA_CHANCELLORS_LETTER_2024_PIC = "assets/achievement-images/unisa-chancellors-letter-of-commandation-2024.png",
+    ACHIEVEMENT_UNISA_CHANCELLORS_LETTER_2024_PIC = "assets/achievement-images/MBA.jpeg",
     SIMPLE_ICONS = "assets/simple-icons",
 }

@@ -270,7 +270,7 @@ const CommunityInvolvement: ProjectSection = {
     entities: [
         {
             liveLink: "https://www.behance.net/divyabhatt9",
-            coverImagePath: AssetPaths.PROJECT_LMS_APP,
+            coverImagePath: AssetPaths.PROJECT_DP_APP,
             techStack: ["Branding", "Visual Arts"],
             title: "Creative Branding Focus",
             description: "🎯 Dedicated to creating visual identities that tell a story. Focused on the intersection of business goals (MBA) and creative execution to deliver unique brand experiences.",
