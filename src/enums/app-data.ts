@@ -10,13 +10,13 @@ const SocialMediaLinks: ExternalSite[] = [
     {
         name: "Behance",
         link: "https://www.behance.net/divyabhatt9", // 
-        simpleIconName: "Behance",
+        simpleIconName: "behance",
         backgroundColor: "#1769ff",
     },
     {
         name: "Gmail",
         link: "mailto:divyabhatt1437@gmail.com", // 
-        simpleIconName: "Gmail",
+        simpleIconName: "gmail",
         backgroundColor: "#EA4335",
     },
     // Keeping these placeholders as the resume didn't provide specific links
@@ -24,13 +24,13 @@ const SocialMediaLinks: ExternalSite[] = [
     {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/divya-bhatt-9a8052210/", 
-        simpleIconName: "LinkedIn",
+        simpleIconName: "linkedin",
         backgroundColor: "#0066c8",
     },
     {
         name: "Instagram",
         link: "https://www.instagram.com/divi_des_/",
-        simpleIconName: "Instagram",
+        simpleIconName: "instagram",
         backgroundColor: "#FF0069",
     }
 ]
@@ -52,27 +52,21 @@ const FullstackSkills: ExternalSite[] = [
     {
         name: "Canva",
         link: "https://www.canva.com/",
-        simpleIconName: "Canva",
+        simpleIconName: "canva",
         backgroundColor: "#00C4CC",
     },
     {
         name: "Figma",
         link: "https://www.figma.com/",
-        simpleIconName: "Figma",
-        backgroundColor: "#F24E1E",
+        simpleIconName: "figma",
+        backgroundColor: "#4829b8",
     },
     {
         name: "Adobe InDesign",
         link: "https://www.adobe.com/products/indesign.html",
-        simpleIconName: "Adobe InDesign",
+        simpleIconName: "indesign",
         backgroundColor: "#FF3366",
     },
-    {
-        name: "Branding",
-        link: "https://www.behance.net/divyabhatt9",
-        simpleIconName: "Behance", // Using Behance icon for general branding link
-        backgroundColor: "#1769ff",
-    }
 ];
 
 // Fullstack section
@@ -94,26 +88,26 @@ const FullstackSection: SkillSection = {
 const CloudSkills: ExternalSite[] = [
     {
         name: "Creativity",
-        link: "https://www.behance.net/divyabhatt9",
-        simpleIconName: "Adobe", // Placeholder icon
+        link: "https://www.adobe.com/products/photoshop.html",
+        simpleIconName: "Adobe Photoshop", // Placeholder icon
         backgroundColor: "#FF0000",
     },
     {
         name: "Collaboration",
-        link: "https://www.behance.net/divyabhatt9",
-        simpleIconName: "Microsoft Teams",
+        link: "https://teams.live.com/free",
+        simpleIconName: "microsoft-teams-icon",
         backgroundColor: "#6264A7",
     },
     {
         name: "Time Management",
         link: "https://www.behance.net/divyabhatt9",
-        simpleIconName: "Clockify",
+        simpleIconName: "clockify",
         backgroundColor: "#03A9F4",
     },
     {
         name: "Deadline Oriented",
         link: "https://www.behance.net/divyabhatt9",
-        simpleIconName: "Asana",
+        simpleIconName: "clickup",
         backgroundColor: "#F06292",
     }
 ];
@@ -323,57 +317,61 @@ const MastersDegree: EducationSection = {
         "Enhanced professional communication and project management skills through collaborative business simulations and academic projects. 🤝",
     ]
 }
-
 export const AppConfig = {
-    loaderSplashAnimation: true,        // Keep as true for a nice entry effect
-    logoName: "Divya Bhatt",            // Updated signature logo
-    name: "Divya Bhatt",                // Updated name
-    emailId: "divyabhatt1437@gmail.com", // Updated email
-
-    // Google Form Contact Link - Leave empty or replace with her form if she has one
-    googleFormContactLink: "",
+    loaderSplashAnimation: true,
+    logoName: "Divya Bhatt",
+    name: "Divya Bhatt",
+    emailId: "divyabhatt1437@gmail.com",
 
     // Home page
     professionalTitle: "Graphic Designer | Branding Specialist",
-    professionalSummary: "I am a passionate Graphic Designer with experience in Branding and Social Media creatives. I specialize in creating engaging visuals that align with brand identity and marketing goals.",
-    githubProfile: "https://www.behance.net/divyabhatt9", // Replacing Github with her main portfolio link
-    portfolioRepository: "",                             // Leave empty or add the project repo
-    socialMedia: SocialMediaLinks,      // Uses the design-focused links we created
-    aboutMe: [                         
-        FullstackSection,               // Now represents Graphic Design & Branding
-        CloudSection,                   // Now represents Professional Attributes/Soft Skills
+    professionalSummary: "I am a passionate Graphic Designer with an MBA, bridging the gap between business strategy and creative execution. I specialize in visual identity, packaging design, and high-impact social media campaigns.",
+    
+    // Links
+    githubProfile: "https://www.behance.net/divyabhatt9", // Pointing to your main portfolio
+    portfolioRepository: "", 
+    socialMedia: SocialMediaLinks,
+
+    // About Me Section
+    aboutMe: [
+        FullstackSection, // Graphic Design & Branding
+        CloudSection,     // Professional Attributes
     ],
 
-    // Projects page
+    // Projects Page
     projectsPageTitle: "Portfolio & Creative Work",
     projectsPageDescription: "A collection of brand identities, packaging designs, and social media campaigns created using industry-standard tools like Illustrator and Photoshop.",
-    projectSections: [                 
-        PersonalProjects,               // Contains Vedaro, Beast Kitchen, etc.
-        FreelancingProjects,            // Contains the "Creative Portfolio" section
+    projectSections: [
+        PersonalProjects,
+        FreelancingProjects,
     ],
 
-    // Experience page
+    // Experience Page
     experiencePageTitle: "Professional Journey",
     experiencePageDescription: "💼 From creative agencies to remote internships: A journey of building visual stories and consistent brand identities.",
-    experienceSections: [              
-        JobExperience,                  // Contains 24K Creative Collective
-        InternshipExperience,           // Contains Flytsocial
-        FreelancingExperience,          // Contains Independent Design services
+    experienceSections: [
+        JobExperience,
+        InternshipExperience,
+        FreelancingExperience,
     ],
 
-    // Education page
+    // Education Page
     educationPageTitle: "Education & Qualifications",
-    educationPageDescription: "🎓 Combining a foundation in Science with a strategic Master's in Business Administration to bring a unique perspective to design.",
+    educationPageDescription: "🎓 Combining a foundation in Science with a strategic MBA to bring a unique perspective to design.",
     educationSections: [
-        MastersDegree,                  // MBA from Graphic Era
-        BachelorsDegree,                // B.Sc. from Kumaon University
+        MastersDegree,
+        BachelorsDegree,
     ],
 
     // Achievements Page
     achievementsPageTitle: "Highlights & Philosophy",
     achievementsPageDescription: "🚀 Merging business strategy with creative execution to deliver impactful design solutions.",
     achievementsSections: [
-        AchievementInvolvement,         // Now features the MBA focus
-        CommunityInvolvement,           // Now features Design Philosophy
+        AchievementInvolvement,
+        CommunityInvolvement,
     ],
+
+    // Contact Page Settings (Internal instead of Google Form)
+    contactPageTitle: "Get in Touch",
+    contactPageDescription: "Let's collaborate on your next project! Feel free to reach out for design services or professional inquiries.",
 }

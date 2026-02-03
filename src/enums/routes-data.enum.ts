@@ -7,9 +7,7 @@ export enum AppRoutes {
     EDUCATION = "education",
     PROJECTS = "projects",
     ACHIEVEMENTS = "achievements",
-
-    // Your google form link
-    CONTACT = "https://docs.google.com/forms/d/e/1FAIpQLSfMOsQhl_Lci5s_qrYN-LEWlJ3NoBag-Uyf17IGktExA5KDpw/viewform?usp=header",
+    CONTACT = "Contact",
 }
 
 export const RoutesData: RouteData[] = [
@@ -42,7 +40,7 @@ export const RoutesData: RouteData[] = [
         routeLinkText: "Contact",
         routeURLName: AppRoutes.CONTACT,
         isVisible: true,
-        isExternalLink: true,
+        isExternalLink: false // This tells Angular to stay inside the app
     },
     {
         routeLinkText: "Error",
