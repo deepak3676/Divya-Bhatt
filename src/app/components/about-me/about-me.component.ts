@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AssetPaths } from '../../../enums/asset-paths.enum';
 import { CommonModule } from '@angular/common';
 import { AppConfig } from '../../../enums/app-data';
@@ -15,4 +15,16 @@ import { AppConfig } from '../../../enums/app-data';
 export class AboutMeComponent {
     public assetPaths = AssetPaths;
     public appConfig = AppConfig;
+    @ViewChild('introVideo') introVideo!: ElementRef<HTMLVideoElement>;
+    videoStarted = false;
+
+    playVideo(event: Event) {
+        const video = this.introVideo.nativeElement;
+        if (video.paused) {
+            video.play();
+            this.videoStarted = true;
+        } else {
+            video.pause();
+        }
+    }
 }

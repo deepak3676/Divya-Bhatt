@@ -6,6 +6,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { EducationComponent } from './pages/education/education.component';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
+import { ContactpageComponent } from './pages/contactpage/contactpage.component';
 
 export const routes: Routes = [
     {
@@ -33,13 +34,19 @@ export const routes: Routes = [
         component: AchievementsComponent,
         title: `Achievements | Divya's Portfolio`,
     },
-    {
-        path: "**",
-        redirectTo: AppRoutes.ERROR,
+    { 
+        path: AppRoutes.CONTACT, 
+        component: ContactpageComponent, 
+        title: `Contact | Divya's Portfolio` 
     },
+    
     {
         path: AppRoutes.ERROR,
         component: ErrorComponent,
         title: `Error | Divya's Portfolio`,
+    },
+    {
+        path: "**",
+        redirectTo: AppRoutes.ERROR,
     }
 ];
