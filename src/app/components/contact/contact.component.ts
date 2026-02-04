@@ -15,9 +15,9 @@ export class ContactComponent {
     e.preventDefault();
 
     // Replace these three strings with your actual EmailJS credentials
-    const SERVICE_ID = 'your_service_id';
-    const TEMPLATE_ID = 'your_template_id';
-    const PUBLIC_KEY = 'your_public_key';
+    const SERVICE_ID = 'service_n8lxgvp';
+    const TEMPLATE_ID = 'template_5xy4mcq';
+    const PUBLIC_KEY = 'NKmNY3ipCoB5gE0Hr';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target as HTMLFormElement, PUBLIC_KEY)
       .then((result: EmailJSResponseStatus) => {
